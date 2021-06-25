@@ -43,15 +43,11 @@ async function getBackgroundImg(){
     //change the data in JSON format
 
     var responseJson= await response.json();
-    console.log("Time",responseJson);
+    
 
 
     // write code slice the datetime
-
-    var datetime= responseJson.datetime;
     var hour=datetime.slice(11,13);
-
-    console.log(hour)
 
     // add conditions to change the background images from sunrise to sunset
      
@@ -98,9 +94,6 @@ async function getBackgroundImg(){
     else if(hour>00&&hour<=3){
         bg = "sunrise10.png"
     }
-
-
-
 
     //load the image in backgroundImg variable here
     backgroundImg = loadImage(bg);   
