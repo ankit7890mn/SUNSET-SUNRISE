@@ -54,20 +54,54 @@ async function getBackgroundImg(){
     console.log(hour)
 
     // add conditions to change the background images from sunrise to sunset
-
-    if(hour>=04 && hour<=06){
-        bg = "sunrise1.png";
-    }else if(hour>=06 && hour<=08){
-        bg = "sunrise2.png";
-    }else if(hour>=23 && hour==0){
-        bg = "sunset10.png";
-    }else if(hour>=0 && hour==03){
-        bg = "sunset11.png";
-    }else{
-        bg = "sunset12.png";
+     
+     if(hour>=04&&hour<=06){
+    bg="sunrise1.png"
     }
-    
+
+    else if(hour>=06&&hour<=08){
+        bg="sunrise2.png"
+    }
+
+    else if(hour>08&&hour<=10){
+        bg= " sunrise3.png"
+    }
+
+    else if(hour>10&&hour<=12){
+        bg = "sunrise4.png"
+    }
+
+    else if(hour>12&&hour<=14){
+        bg = "sunrise4.png"
+    }
+
+    else if(hour>14&&hour<=16){
+        bg = "sunrise5.png"
+    }
+
+    else if(hour>16&&hour<=18){
+        bg = "sunrise6.png"
+    }
+
+    else if(hour>18&&hour<=20){
+        bg = "sunrise7.png"
+    }
+
+    else if(hour>20&&hour<=22){
+        bg = "sunset8.png"
+    }
+
+    else if(hour>22&&hour<=24){
+        bg= "sunset9.png"
+    }
+
+    else if(hour>00&&hour<=3){
+        bg = "sunrise10.png"
+    }
+
+
+
 
     //load the image in backgroundImg variable here
     backgroundImg = loadImage(bg);   
-
+}
