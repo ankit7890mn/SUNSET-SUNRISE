@@ -9,7 +9,7 @@ var bg ;
 
 function preload() {
     // create getBackgroundImg( ) here
-   getBackgroundImg();
+   getBackgroundImg()
 }
 
 function setup(){
