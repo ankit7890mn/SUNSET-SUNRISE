@@ -5,11 +5,11 @@ const Constraint = Matter.Constraint;
 
 var engine, world;
 var backgroundImg;
-var bg , getBackgroundImg ;
+var bg , hour ;
 
 function preload() {
     // create getBackgroundImg( ) here
-   
+       getBackgroundImg();
    
 }
 
