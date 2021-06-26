@@ -5,10 +5,11 @@ const Constraint = Matter.Constraint;
 
 var engine, world;
 var backgroundImg;
-var bg ;
+var bg , getBackgroundImg ;
 
 function preload() {
     // create getBackgroundImg( ) here
+    getBackgroundImg();
    
 }
 
@@ -82,7 +83,7 @@ function draw(){
             bg = "sunset11.png";
         }
 
-        else {
+        else {if(hour>=23 && hour<=24)
             bg = "sunset12.png";
         }        
           
