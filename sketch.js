@@ -9,7 +9,7 @@ var bg , getBackgroundImg ;
 
 function preload() {
     // create getBackgroundImg( ) here
-    getBackgroundImg();
+   
    
 }
 
@@ -17,6 +17,7 @@ function setup(){
     var canvas = createCanvas(1200,700);
     engine = Engine.create();
     world = engine.world;
+    getBackgroundImg();
 
 }
 
